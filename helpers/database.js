@@ -6,6 +6,7 @@ const sequelize = new Sequelize({
     storage: './database/sqlite'
 })
 
+
 sequelize.authenticate()
     .then(()=> {
         console.log('The Connection established successfully !!')
